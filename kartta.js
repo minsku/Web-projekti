@@ -1,4 +1,4 @@
-var mymap = L.map('mapid').setView([60.1733, 24.94], 11);
+var mymap = L.map('mapid').setView([60.1733, 24.94], 12);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
   maxZoom: 18,
@@ -8,3 +8,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   tileSize: 512,
   zoomOffset: -1
 }).addTo(mymap);
+
+var ateneum = L.marker([60.1702332, 24.9440396]).addTo(mymap);
+ateneum.bindPopup("Ateneumin taidemuseo,<br> Kaivokatu 2, Helsinki");
+
