@@ -1,7 +1,14 @@
 body {
     background: aliceblue;
 }
-
+#kuvascroll {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+#kuvascroll .slide {
+    display: inline-block;
+}
 
 @media only screen and (min-width: 600px) {
 
