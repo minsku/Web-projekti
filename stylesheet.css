@@ -9,8 +9,23 @@ body {
 #kuvascroll .slide {
     display: inline-block;
 }
+#main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-
-@media only screen and (min-width: 600px) {
-
+@media only screen and (max-width: 600px) {
+    #main-menu li.right,  
+    #main-menu li {float: none;}
 }
