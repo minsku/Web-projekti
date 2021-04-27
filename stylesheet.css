@@ -24,7 +24,23 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
+figure.galleria {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+figure.galleria:hover {
+    border:1px solid #777;
+}
+figure.galleria img {
+    width: 100%;
+    height: auto;
+}
+figcaption.kuvaus {
+    padding: 15px;
+    text-align: center;
+}
 @media only screen and (max-width: 600px) {
     #main-menu li.right,  
     #main-menu li {float: none;}
