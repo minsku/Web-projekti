@@ -35,24 +35,20 @@
         <h1>Luontoreittejä</h1>
     </header>
     <main>
-        <p id="reittinimi"></p>
-        <article>
-        <form class="reittinapit">
-            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="1">Harakka</button>
-            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="2">Kallalahdenniemi</button>
-            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="3">Keskuspuisto</button>
-            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="4">Lauttasaari</button>
-            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="5">Mustavuori</button>
-        </form>
-        </article>
-        <article>
-            <div id="kartta" style="width: 800px; height: 600px;"></div>
-            <script src="../js/reittikartta.js"></script>
-        </article>
+        <section>
+            <p id="reittinimi"></p>
+            <form class="reittinapit">
+                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="1">Harakka</button>
+                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="2">Kallalahdenniemi</button>
+                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="3">Keskuspuisto</button>
+                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="4">Lauttasaari</button>
+                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="5">Mustavuori</button>
+            </form>
+            <div id="kartta"></div>
 
+        </section>
     </main>
+    <script src="../js/reittikartta.js"></script>
 </div>
-
-
 </body>
 </html>
