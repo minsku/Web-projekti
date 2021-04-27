@@ -89,7 +89,6 @@ figcaption.kuvaus {
 .reittinappi {
     background-color: greenyellow;
     border: greenyellow;
-    float: left;
     font-size: 16px;
     padding: 12px 28px;
 }
