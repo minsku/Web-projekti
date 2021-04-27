@@ -35,18 +35,21 @@
         <h1>Luontoreittejä</h1>
     </header>
     <main>
-        <p>reittikartta</p>
         <p id="reittinimi"></p>
-        <div id="mapid" style="width: 800px; height: 600px;"></div>
-        <form>
-            <button type="button" onclick="haeReitti(this)" id="1">Harakka</button>
-            <button type="button" onclick="haeReitti(this)" id="2">Kallalahdenniemi</button>
-            <button type="button" onclick="haeReitti(this)" id="3">Keskuspuisto</button>
-            <button type="button" onclick="haeReitti(this)" id="4">Lauttasaari</button>
-            <button type="button" onclick="haeReitti(this)" id="5">Mustavuori</button>
+        <article>
+        <form class="reittinapit">
+            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="1">Harakka</button>
+            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="2">Kallalahdenniemi</button>
+            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="3">Keskuspuisto</button>
+            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="4">Lauttasaari</button>
+            <button class="reittinappi" type="button" onclick="haeReitti(this)" id="5">Mustavuori</button>
         </form>
+        </article>
+        <article>
+            <div id="kartta" style="width: 800px; height: 600px;"></div>
+            <script src="../js/reittikartta.js"></script>
+        </article>
 
-        <script src="../kartta.js"></script>
     </main>
 </div>
 
