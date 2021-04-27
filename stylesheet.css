@@ -1,35 +1,31 @@
 body {
     background: aliceblue;
 }
-
-ul {
+#kuvascroll {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+#kuvascroll .slide {
+    display: inline-block;
+}
+#main-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
-
 li {
     float: left;
 }
-
 li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-
-@media only screen and (min-width: 600px) {
-
+@media only screen and (max-width: 600px) {
+    #main-menu li.right,  
+    #main-menu li {float: none;}
 }
