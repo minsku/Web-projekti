@@ -86,11 +86,16 @@ figcaption.kuvaus {
 /*
 ---------------------Reittikartta-asiat--------------------------
 */
+#kartta {
+    width: 75%;
+    height: 600px;
+}
 .reittinappi {
     background-color: greenyellow;
     border: greenyellow;
     font-size: 16px;
     padding: 12px 28px;
+
 }
 .reittinapit {
     width: 100%;
@@ -98,4 +103,5 @@ figcaption.kuvaus {
 @media only screen and (max-width: 600px) {
     #main-menu li.right,  
     #main-menu li {float: none;}
+    #kartta {width: 100%;}
 }
