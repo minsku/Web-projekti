@@ -26,6 +26,6 @@ li a {
 }
 
 @media only screen and (max-width: 600px) {
-    #main-menu li.right,  
+    #main-menu li.right,
     #main-menu li {float: none;}
 }
