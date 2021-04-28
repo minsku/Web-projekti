@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="../lightbox/lightbox.css" rel="stylesheet">
 
 </head>
 <body>
@@ -37,7 +37,8 @@
     <main class="kuvagalleria">
         <figure class="galleria">
             <a target="_blank" href="../media/testi.jpg">
-                <img src="../media/testi.jpg" alt="" width="" height="300px">
+                <a href="../media/testi.jpg" data-lightbox="kuvagalleria" data-title="eka kuva">
+                    <img src="../media/testi.jpg" alt="" width="" height="300px"></a>
             </a>
             <figcaption class="kuvaus">
                 <h3>Kuvateksti</h3>
@@ -45,7 +46,8 @@
         </figure>
         <figure class="galleria">
             <a target="_blank" href="../media/testi.jpg">
-                <img src="../media/testi.jpg" alt="" width="" height="300px">
+                <a href="../media/testi.jpg" data-lightbox="kuvagalleria" data-title="toka kuva">
+                    <img src="../media/testi.jpg" alt="" width="" height="300px"></a>
             </a>
             <figcaption class="kuvaus">
                 <h3>Kuvateksti</h3>
@@ -53,16 +55,34 @@
         </figure>
         <figure class="galleria">
             <a target="_blank" href="../media/testi.jpg">
-                <img src="../media/testi.jpg" alt="" width="" height="300px">
+                <a href="../media/testi.jpg" data-lightbox="kuvagalleria" data-title="">
+                    <img src="../media/testi.jpg" alt="" width="" height="300px"></a>
             </a>
             <figcaption class="kuvaus">
                 <h3>Kuvateksti</h3>
             </figcaption>
         </figure>
-
+        <figure class="galleria">
+            <a target="_blank" href="../media/testi2.jpg">
+                <a href="../media/testi2.jpg" data-lightbox="kuvagalleria" data-title="">
+                    <img src="../media/testi2.jpg" alt="" width="" height="340"></a>
+            </a>
+            <figcaption class="kuvaus">
+                <h3>Kuvateksti</h3>
+            </figcaption>
+        </figure>
+        <figure class="galleria">
+            <a target="_blank" href="../media/testi.jpg">
+                <a href="../media/testi.jpg" data-lightbox="kuvagalleria" data-title="">
+                    <img src="../media/testi.jpg" alt="" width="" height="340px"></a>
+            </a>
+            <figcaption class="kuvaus">
+                <h3>Kuvateksti</h3>
+            </figcaption>
+        </figure>
     </main>
     </div>
 </div>
-
+<script src="../lightbox/lightbox-plus-jquery.js"></script>
 </body>
 </html>

@@ -101,14 +101,14 @@ figure.galleria {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 180px;
+    width: auto;
 }
 figure.galleria:hover {
     border:1px solid #777;
 }
 figure.galleria img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
 }
 figcaption.kuvaus {
     padding: 15px;
@@ -134,5 +134,7 @@ figcaption.kuvaus {
 @media only screen and (max-width: 600px) {
     #main-menu li.right,
     #main-menu li {float: none;}
+    #main-menu {padding-left: 0px;}
     #kartta {width: 100%;}
+    .galleria {width: 100%;}
 }
