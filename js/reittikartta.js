@@ -10,6 +10,29 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   zoomOffset: -1
 }).addTo(kartta);
 
+
+/*GEOLOKAATIO*/
+var omaLat;
+var omaLng;
+
+var x = document.getElementById("virheilmoitus");
+function getLocation() {
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser."
+  }
+}
+function showPosition(position) {
+  omaLat = position.coords.latitude;
+  omaLng = position.coords.longitude;
+  let piste = L.marker([omaLat, omaLng]).addTo(kartta);
+  piste.bindPopup("Sinä olet täällä!");
+  kartta.panTo([omaLat, omaLng]);
+
+}
+getLocation();
+
 function haeReitti(elem) {
   'use strict';
   let id = elem.id - 1;
@@ -26,9 +49,6 @@ function haeReitti(elem) {
 
   function naytaTulos(json) {
     let i;
-    const title = json[id].title;
-    const nimi = document.getElementById('reittinimi');
-    nimi.innerText ="Reitti: " + title;
 
     for(i=0;i < json[id].points.length;i++) {
       let lat = json[id].points[i].locationPoint.lat;
@@ -39,8 +59,17 @@ function haeReitti(elem) {
       piste.bindPopup(info);
 
     }
+    /*
+    L.Routing.control({
+      waypoints: [
+          L.latLng(omaLat, omaLng),
+          L.latLng(json[id].points[0].locationPoint.lat, json[id].points[0].locationPoint.lng)
+      ]
+    }).addTo(kartta);
 
-    kartta.panTo([json[id].points[0].locationPoint.lat, json[id].points[0].locationPoint.lng]);
+     */
+
+    kartta.flyTo([json[id].points[0].locationPoint.lat, json[id].points[0].locationPoint.lng]);
 
   }
 }
