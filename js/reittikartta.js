@@ -35,7 +35,7 @@ getLocation();
 
 function haeReitti(elem) {
   'use strict';
-  let id = elem.id - 1;
+  let id = elem.value - 1;
   const url = "https://citynature.eu/api/wp/v2/places?cityid=5";
 
   fetch(url)
