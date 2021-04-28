@@ -121,18 +121,14 @@ figcaption.kuvaus {
     width: 75%;
     height: 650px;
 }
-.reittinappi {
-    background-color: greenyellow;
-    border: greenyellow;
+#reitit {
+    padding: 4px 8px;
     font-size: 16px;
-    padding: 12px 28px;
-
+    margin: 5px;
 }
-.reittinappi:hover {
-    background-color: green;
-}
-.reittinapit {
-    width: 100%;
+.reittinappi {
+    font-size: 16px;
+    background-color: #9bb189;
 }
 @media only screen and (max-width: 600px) {
     #main-menu li.right,
