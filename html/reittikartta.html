@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -40,16 +41,17 @@
     </header>
     <main>
         <section>
-            <p id="reittinimi"></p>
+
             <form class="reittinapit">
                 <button class="reittinappi" type="button" onclick="haeReitti(this)" id="1">Harakka</button>
                 <button class="reittinappi" type="button" onclick="haeReitti(this)" id="2">Kallalahdenniemi</button>
                 <button class="reittinappi" type="button" onclick="haeReitti(this)" id="3">Keskuspuisto</button>
                 <button class="reittinappi" type="button" onclick="haeReitti(this)" id="4">Lauttasaari</button>
                 <button class="reittinappi" type="button" onclick="haeReitti(this)" id="5">Mustavuori</button>
+
             </form>
             <div id="kartta"></div>
-
+            <p id="virheilmoitus"></p>
         </section>
     </main>
     </div>
