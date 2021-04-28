@@ -32,6 +32,13 @@ li a:hover:not(.active) {
 body {
     font-family: 'Lato', sans-serif;
     background: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#sivun-sisälto {
+    padding: 25px 50px 30px;
 }
 
 /*
