@@ -41,15 +41,16 @@
     </header>
     <main>
         <section>
+            <label for="reitit">Valitse reitti</label>
+            <select id="reitit" onchange="haeReitti(this)">
+                <option class="reittinappi"></option>
+                <option class="reittinappi" value="1">Harakka</option>
+                <option class="reittinappi" value="2">Kallalahdenniemi</option>
+                <option class="reittinappi" value="3">Keskuspuisto</option>
+                <option class="reittinappi" value="4">Lauttasaari</option>
+                <option class="reittinappi" value="5">Mustavuori</option>
+            </select>
 
-            <form class="reittinapit">
-                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="1">Harakka</button>
-                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="2">Kallalahdenniemi</button>
-                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="3">Keskuspuisto</button>
-                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="4">Lauttasaari</button>
-                <button class="reittinappi" type="button" onclick="haeReitti(this)" id="5">Mustavuori</button>
-
-            </form>
             <div id="kartta"></div>
             <p id="virheilmoitus"></p>
         </section>
