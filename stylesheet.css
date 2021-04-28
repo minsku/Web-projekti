@@ -76,7 +76,7 @@ image.fadekuva {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: gray;
+    background-color: darkolivegreen;
 }
 .container:hover .overlay {
     opacity: 1;
@@ -127,6 +127,9 @@ figcaption.kuvaus {
     font-size: 16px;
     padding: 12px 28px;
 
+}
+.reittinappi:hover {
+    background-color: green;
 }
 .reittinapit {
     width: 100%;
