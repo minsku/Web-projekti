@@ -82,7 +82,7 @@ image.fadekuva {
     opacity: 1;
 }
 .teksti {
-    color: black;
+    color: #FFFBFF;
     font-size: 20px;
     position: absolute;
     top: 50%;
