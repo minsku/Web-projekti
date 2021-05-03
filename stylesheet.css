@@ -61,6 +61,10 @@ header img {
 header h1 {
     float: left;
 }
+#etusivun-otsikko {
+    text-align: center;
+    font-size: 60px;
+}
 
 /*
 --------------------KUVASCROLL OMINAISUUDET--------------------------
