@@ -10,7 +10,6 @@
     font-family: 'Lato', sans-serif;
     border-left-style: solid;
 
-
 }
 li {
     float: left;
@@ -21,7 +20,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: aliceblue;
+    color: #FFFBFF;
 
 }
 
@@ -43,10 +42,11 @@ li a:hover:not(.active) {
 body {
     font-family: 'Lato', sans-serif;
     background: aliceblue;
-    padding-top: 15px;
+    padding-top: 0px;
     padding-bottom: 30px;
     margin-right: 0px;
     margin-left: 0px;
+    margin-top: 0px;
 }
 #sivun-sisälto {
     padding: 25px 50px 30px;
@@ -136,11 +136,27 @@ figcaption.kuvaus {
     font-size: 16px;
     background-color: #9bb189;
 }
+/*
+-------------- Tekijöiden kuvat -------------
+*/
+figure.tekijät {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: auto;
+}
+/*
+--------------- Responsiivisuus ----------------
+*/
 @media only screen and (max-width: 600px) {
     #main-menu li.right,
     #main-menu li {float: none;}
     #main-menu {padding-left: 0px;}
+    #sivun-sisälto {padding: 25px 5% 30px;}
     #kartta {width: 100%;}
     #mapid {width: 100%;}
-    .galleria {width: 100%;}
+    figure.galleria {
+        width: 100%;
+        margin-left: 0px;}
+    figure.galleria img {width: 100%;}
 }
