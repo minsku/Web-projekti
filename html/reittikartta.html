@@ -10,38 +10,31 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
-    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div id="page-container">
 
-    <ul id="main-menu">
-        <li>
-            <a href="index.html"><i class="fa fa-home"></i>   Etusivu</a>
-        </li>
-        <li>
-            <a href="kuvat.html"><i class="fa fa-camera"></i>     Kuvat</a>
-        </li>
-        <li>
-            <a class="active" href="reittikartta.html"><i class="fa fa-map-marker"></i>        Luontoreittejä</a>
-        </li>
-        <li>
-            <a href="video.html"><i class="fa fa-video-camera"></i>      Video</a>
-        </li>
-        <li>
-            <a href="muuta.html"><i class="fa fa-plus"></i>      Muuta</a>
-        </li>
-    </ul>
+    <nav>
+        <ul id="main-menu">
+            <li><a href="index.html"><i class="fa fa-home"></i>   Etusivu</a></li>
+            <li><a href="kuvat.html"><i class="fa fa-camera"></i>     Kuvat</a></li>
+            <li><a class="active" href="reittikartta.html"><i class="fa fa-map-marker"></i>        Luontoreittejä</a></li>
+            <li><a href="video.html"><i class="fa fa-video-camera"></i>      Video</a></li>
+            <li><a href="muuta.html"><i class="fa fa-plus"></i>      Muuta</a></li>
+        </ul>
+    </nav>
 
     <div id="sivun-sisälto">
     <header>
         <h1>Luontoreittejä</h1>
     </header>
     <main>
-        <p>Lähde tutustumaan luontoon ja inspiroidu. Apuna voit käyttää kartasta löytyviä luontoreittejä.
-            Kauniit maisemat ovat lähempänä kuin luuletkaan!</p>
+        <article>
+            <p>Lähde tutustumaan luontoon ja inspiroidu. Apuna voit käyttää kartasta löytyviä luontoreittejä.
+                Kauniit maisemat ovat lähempänä kuin luuletkaan!</p>
+        </article>
         <section>
             <label for="reitit">Valitse reitti: </label>
             <select id="reitit" onchange="haeReitti(this)">
