@@ -51,6 +51,16 @@ body {
 #sivun-sisälto {
     padding: 25px 50px 30px;
 }
+header {
+    overflow: auto;
+}
+header img {
+    float: left;
+    height: 75px;
+}
+header h1 {
+    float: left;
+}
 
 /*
 --------------------KUVASCROLL OMINAISUUDET--------------------------
