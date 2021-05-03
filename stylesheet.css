@@ -33,6 +33,11 @@ li a:hover:not(.active) {
     background-color: darkolivegreen;
 }
 
+#mapid {
+    width: 600px;
+    height: 400px;
+}
+
 /*---------------BODY----------------*/
 
 body {
@@ -113,6 +118,7 @@ figure.galleria img {
 figcaption.kuvaus {
     padding: 15px;
     text-align: center;
+    font-size: medium;
 }
 /*
 ---------------------Reittikartta-asiat--------------------------
@@ -135,5 +141,6 @@ figcaption.kuvaus {
     #main-menu li {float: none;}
     #main-menu {padding-left: 0px;}
     #kartta {width: 100%;}
+    #mapid {width: 100%;}
     .galleria {width: 100%;}
 }
