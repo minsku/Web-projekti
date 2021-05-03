@@ -155,6 +155,10 @@ figure.tekijät {
     float: left;
     width: auto;
 }
+figure.tekijät img {
+    width: auto;
+    height: 300px;
+}
 /*
 --------------- Responsiivisuus ----------------
 */
