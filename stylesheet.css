@@ -51,10 +51,6 @@ body {
 #sivun-sisälto {
     padding: 25px 50px 30px;
 }
-#page-container {
-    max-width: 1100px;
-    margin: auto;
-}
 header {
     overflow: auto;
 }
@@ -64,11 +60,6 @@ header img {
 }
 header h1 {
     float: left;
-}
-
-#etusivun-otsikko {
-    text-align: center;
-    font-size: 60px;
 }
 
 /*
