@@ -11,11 +11,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(kartta);
 
 
-/*GEOLOKAATIO*/
-var omaLat;
-var omaLng;
+/*GEOLOKAATIO jonka avulla saadaan käyttäjän sijainti kartalle alussa*/
+let omaLat;
+let omaLng;
 
-var x = document.getElementById("virheilmoitus");
+let x = document.getElementById("virheilmoitus");
 function getLocation() {
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -23,7 +23,7 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser."
   }
 }
-function showPosition(position) {
+function showPosition(position) {                                  //tässä kohtaa lisätään sijainti karttamarkkeriksi
   omaLat = position.coords.latitude;
   omaLng = position.coords.longitude;
   let piste = L.marker([omaLat, omaLng]).addTo(kartta);
@@ -33,12 +33,12 @@ function showPosition(position) {
 }
 getLocation();
 
-function haeReitti(elem) {
+function haeReitti(elem) {                                        //funktio, jota haetaan kun dropdown menun linkkiä painetaan
   'use strict';
-  let id = elem.value - 1;
+  let id = elem.value;                                        //id on muuttuja jonka avulla tiedetään, minkä paikan tiedot haetaan
   const url = "https://citynature.eu/api/wp/v2/places?cityid=5";
 
-  fetch(url)
+  fetch(url)                                                      //haetaan API-sivusto
   .then(function(vastaus){
     return vastaus.json();
   }).then(function(json){
@@ -50,7 +50,7 @@ function haeReitti(elem) {
   function naytaTulos(json) {
     let i;
 
-    for(i=0;i < json[id].points.length;i++) {
+    for(i=0;i < json[id].points.length;i++) {                   //käydään läpi halutun reitin json ja lisätään markerit karttaan
       let lat = json[id].points[i].locationPoint.lat;
       let lng = json[id].points[i].locationPoint.lng;
       let info = json[id].points[i].locationPoint.pointInfo;
@@ -59,17 +59,8 @@ function haeReitti(elem) {
       piste.bindPopup(info);
 
     }
-    /*
-    L.Routing.control({
-      waypoints: [
-          L.latLng(omaLat, omaLng),
-          L.latLng(json[id].points[0].locationPoint.lat, json[id].points[0].locationPoint.lng)
-      ]
-    }).addTo(kartta);
 
-     */
-
-    kartta.flyTo([json[id].points[0].locationPoint.lat, json[id].points[0].locationPoint.lng]);
+    kartta.flyTo([json[id].points[0].locationPoint.lat, json[id].points[0].locationPoint.lng]);  //kartan ominaisuus "lentää" jonkin markerin luo
 
   }
 }
