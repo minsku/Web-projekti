@@ -32,13 +32,15 @@
     </header>
     <main>
         <article>
+            <h2>Etsi reittisi!</h2>
             <p>Lähde tutustumaan luontoon ja inspiroidu. Apuna voit käyttää kartasta löytyviä luontoreittejä.
                 Kauniit maisemat ovat lähempänä kuin luuletkaan!</p>
         </article>
         <section>
+            <h2>Kartta</h2>
             <label for="reitit">Valitse reitti: </label>
             <select id="reitit" onchange="haeReitti(this)">
-                <option class="reittinappi"></option>
+                <option class="reittinappi">Reitti</option>
                 <option class="reittinappi" value="1">Harakka</option>
                 <option class="reittinappi" value="2">Kallalahdenniemi</option>
                 <option class="reittinappi" value="3">Keskuspuisto</option>
@@ -48,7 +50,6 @@
                 <div id="kartta"></div>
                 <p id="virheilmoitus"></p>
             </section>
-        </article>
     </main>
     </div>
     <script src="../js/reittikartta.js"></script>
