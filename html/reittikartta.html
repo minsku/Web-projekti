@@ -40,22 +40,26 @@
         <h1>Luontoreittejä</h1>
     </header>
     <main>
-        <p>Lähde tutustumaan luontoon ja inspiroidu. Apuna voit käyttää kartasta löytyviä luontoreittejä.
-            Kauniit maisemat ovat lähempänä kuin luuletkaan!</p>
-        <section>
-            <label for="reitit">Valitse reitti: </label>
-            <select id="reitit" onchange="haeReitti(this)">
-                <option class="reittinappi"></option>
-                <option class="reittinappi" value="1">Harakka</option>
-                <option class="reittinappi" value="2">Kallalahdenniemi</option>
-                <option class="reittinappi" value="3">Keskuspuisto</option>
-                <option class="reittinappi" value="4">Lauttasaari</option>
-                <option class="reittinappi" value="5">Mustavuori</option>
-            </select>
+        <article>
+            <section>
+                <p>Lähde tutustumaan luontoon ja inspiroidu. Apuna voit käyttää kartasta löytyviä luontoreittejä.
+                    Kauniit maisemat ovat lähempänä kuin luuletkaan!</p>
+            </section>
+            <section>
+                <label for="reitit">Valitse reitti: </label>
+                <select id="reitit" onchange="haeReitti(this)">
+                    <option class="reittinappi"></option>
+                    <option class="reittinappi" value="1">Harakka</option>
+                    <option class="reittinappi" value="2">Kallalahdenniemi</option>
+                    <option class="reittinappi" value="3">Keskuspuisto</option>
+                    <option class="reittinappi" value="4">Lauttasaari</option>
+                    <option class="reittinappi" value="5">Mustavuori</option>
+                </select>
 
-            <div id="kartta"></div>
-            <p id="virheilmoitus"></p>
-        </section>
+                <div id="kartta"></div>
+                <p id="virheilmoitus"></p>
+            </section>
+        </article>
     </main>
     </div>
     <script src="../js/reittikartta.js"></script>
