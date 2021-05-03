@@ -112,6 +112,13 @@ image.fadekuva {
 /*
 -------------------------KUVAGALLERIA----------------------------
 */
+#kuvasivu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
 figure.galleria {
     margin: 5px;
     border: 1px solid #ccc;
@@ -122,7 +129,7 @@ figure.galleria:hover {
     border:1px solid #777;
 }
 figure.galleria img {
-    width: auto;
+    width: 400px;
     height: 300px;
 }
 figcaption.kuvaus {
@@ -173,4 +180,5 @@ figure.tekijät img {
         width: 100%;
         margin-left: 0px;}
     figure.galleria img {width: 100%;}
+
 }
