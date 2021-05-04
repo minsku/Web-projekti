@@ -72,6 +72,9 @@ header h1 {
     text-align: center;
     font-size: 60px;
 }
+#karttaotsikko {
+    font-size: 40px;
+}
 
 /*
 --------------------KUVASCROLL OMINAISUUDET--------------------------
@@ -185,6 +188,60 @@ figure.tekijät img {
     flex-wrap: wrap;
 }
 /*
+--------------- Etusivu ----------------
+*/
+/*.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+
+}
+
+.left-side1 {
+    flex: 50%;
+    /*background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.right-side1 {
+    flex: 50%;
+    /*background-color: white;
+    padding: 20px;
+}
+*/
+.row2 {
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;*/
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+
+}
+
+.left-side2 {
+    flex: 20%;
+    /*background-color: #f1f1f1;*/
+    padding: 20px;
+}
+
+.right-side2 {
+    flex: 80%;
+    /*background-color: white;
+    padding: 20px;*/
+}
+
+
+/*
+--------------- Videosivu ----------------
+*/
+
+/*
 --------------- Responsiivisuus ----------------
 */
 @media only screen and (max-width: 600px) {
@@ -198,8 +255,15 @@ figure.tekijät img {
         width: 100%;
         margin-left: 0px;}
     figure.galleria img {width: 100%;}
-
+    /*.row1 {flex-direction: column;}*/
 }
+@media screen and (max-width: 700px) {
+    .row2 {
+        flex-direction: column;
+    }
+}
+
+
 /*@media only screen and (min-width: ){
     #main-menu {padding-left: 50px;}
 }*/
