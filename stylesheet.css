@@ -50,12 +50,13 @@ body {
 }
 #sivun-sisälto {
     padding: 25px 50px 30px;
-}
-
-#page-container {
     max-width: 1400px;
     margin: auto;
 }
+
+/*#page-container {
+
+}*/
 
 header {
     overflow: auto;
@@ -173,8 +174,15 @@ figure.tekijät {
     width: auto;
 }
 figure.tekijät img {
-    width: auto;
+    width: 250px;
     height: 300px;
+    object-fit: cover;
+}
+
+#tekijat-flex {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 /*
 --------------- Responsiivisuus ----------------
@@ -192,3 +200,6 @@ figure.tekijät img {
     figure.galleria img {width: 100%;}
 
 }
+/*@media only screen and (min-width: ){
+    #main-menu {padding-left: 50px;}
+}*/
